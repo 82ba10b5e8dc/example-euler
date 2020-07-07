@@ -1,0 +1,43 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@types/jest": "^26.0.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "name": "learning-euler",
+  "version": "1.0.0",
+  "description": "Solutions for Project Euler problems",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "yarn jest",
+    "build": "tsc"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/82ba10b5e8dc/learning-euler.git"
+  },
+  "keywords": [
+    "typescript",
+    "euler",
+    "algorithms"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/82ba10b5e8dc/example-euler/issues"
+  },
+  "homepage": "https://github.com/82ba10b5e8dc/example-euler#readme"
+}
