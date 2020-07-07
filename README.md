@@ -4,13 +4,13 @@ Project Euler
 
 This repo contains solutions for the problems in the [Project Euler](https://projecteuler.net/) archives. It's written using TypeScript and asserted on using Jest.
 
-# `yarn test`
+### `yarn test`
 You can run all the assertions which include sanity checks as well as expected answers to the problems.
 
-# `yarn build`
+### `yarn build`
 Creates a compiled JavaScript version of the methods to import and call however you like from the Node CLI.
 
-# License
+### License
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
